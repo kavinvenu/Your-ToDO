@@ -107,9 +107,9 @@ Copy code
 npm run build
 Output will be in the dist/ directory.
 
-📁 Project Structure
-csharp
-Copy code
+# 📁 Project Structure
+
+```csharp
 Client/
 ├── public/               # Static assets
 ├── src/
@@ -137,6 +137,9 @@ Client/
 ├── tailwind.config.js    # Tailwind setup
 ├── tsconfig.json         # TypeScript config
 └── vite.config.ts        # Vite config
+```
+
+
 🔗 API Integration
 Integrated via services/api.ts:
 
