@@ -1,191 +1,175 @@
-# SmartTasker Frontend
+# 🚀 SmartTasker Frontend
 
-A modern, full-featured task management application built with React, TypeScript, and Tailwind CSS. This frontend connects to the SmartTasker backend API to provide a complete task management solution.
+**SmartTasker** is a modern, feature-rich task management frontend built with **React**, **TypeScript**, and **Tailwind CSS**, designed to deliver an intuitive and powerful user experience. It integrates seamlessly with the SmartTasker backend API, offering a complete, real-time task collaboration platform.
 
-## Features
 
-### 🔐 Authentication
-- **Email/Password Authentication**: Traditional login and registration
-- **OAuth Integration**: Google and GitHub OAuth support
-- **JWT Token Management**: Secure session handling with automatic token refresh
-- **Protected Routes**: Route protection based on authentication status
+https://github.com/user-attachments/assets/38f2ac70-8f87-45b5-98e4-8e9496f00984
 
-### 📋 Task Management
-- **CRUD Operations**: Create, read, update, and delete tasks
-- **Task Categories**: Organize tasks by categories
-- **Priority Levels**: Low, Medium, High, and Urgent priority levels
-- **Status Tracking**: Pending, In Progress, Completed, and Cancelled statuses
-- **Due Date Management**: Set and track task due dates
-- **Time Estimation**: Estimate and track actual time spent on tasks
-- **Recurring Tasks**: Set up daily, weekly, monthly, or yearly recurring tasks
-- **Task Tags**: Add custom tags to tasks for better organization
 
-### 🔍 Advanced Filtering & Search
-- **Real-time Search**: Search tasks by title, description, or tags
-- **Status Filtering**: Filter by task status
-- **Priority Filtering**: Filter by priority level
-- **Category Filtering**: Filter by task category
-- **Date Filtering**: Filter by due date ranges
-- **Sorting Options**: Sort by due date, creation date, priority, status, or title
-- **Pagination**: Efficient pagination for large task lists
+---
 
-### 👥 Task Sharing & Collaboration
-- **Task Sharing**: Share tasks with other users via email
-- **Permission Levels**: Read, Write, and Admin permissions
-- **Shared Task Management**: View and manage shared tasks
-- **Collaborative Comments**: Add comments to tasks
-- **Activity Tracking**: Track task activity and changes
+## 🌟 Key Highlights
 
-### 📊 Analytics & Insights
-- **Task Statistics**: View total, pending, in-progress, completed, and overdue task counts
-- **Progress Tracking**: Monitor task completion progress
-- **Overdue Alerts**: Visual indicators for overdue tasks
-- **Performance Metrics**: Track estimated vs actual time
+### 🔐 Secure Authentication
+- **Email/Password Login**: Traditional login and registration
+- **OAuth Support**: Sign in with Google or GitHub
+- **JWT Session Management**: Secure, persistent login with automatic token refresh
+- **Protected Routing**: Ensures authenticated access to private routes
+
+### ✅ Comprehensive Task Management
+- **Full CRUD**: Create, view, edit, and delete tasks
+- **Categories & Tags**: Organize tasks effectively
+- **Priority & Status**: Manage urgency and progress (Pending, In Progress, Completed, Cancelled)
+- **Due Dates & Time Tracking**: Set deadlines, estimate time, and track actuals
+- **Recurring Tasks**: Automate daily, weekly, monthly, or yearly tasks
+
+### 🔍 Advanced Search & Filters
+- **Instant Search**: Filter tasks by title, description, or tags
+- **Multi-Factor Filtering**: Status, priority, category, due date, and more
+- **Sorting Options**: Sort by title, date, priority, or status
+- **Pagination**: Efficient navigation of large task lists
+
+### 🤝 Collaboration & Sharing
+- **Task Sharing**: Share tasks via email
+- **Permissions**: Grant Read, Write, or Admin access
+- **Task Comments**: Real-time collaborative commenting
+- **Activity Logs**: Track edits and updates
+
+### 📈 Insights & Analytics
+- **Statistics**: Monitor total, pending, overdue, and completed tasks
+- **Progress Tracking**: Visualize completion status
+- **Overdue Alerts**: Highlight tasks needing attention
+- **Time Comparison**: Estimate vs actual time reporting
 
 ### 🔔 Real-time Updates
-- **Socket.IO Integration**: Real-time task updates across all connected clients
-- **Live Notifications**: Instant updates when tasks are created, updated, or shared
-- **Collaborative Editing**: See changes made by other users in real-time
-- **Online Status**: Track user online/offline status
+- **Socket.IO Integration**: Live updates across users
+- **Notifications**: Alerts for task changes and comments
+- **Collaborative Editing**: See real-time edits
+- **Online Status**: Know who’s online and active
 
-### 🎨 User Experience
-- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
-- **Dark/Light Mode**: Toggle between dark and light themes
-- **Modern UI**: Clean, intuitive interface built with Tailwind CSS
-- **Loading States**: Smooth loading indicators and skeleton screens
-- **Error Handling**: Comprehensive error handling with user-friendly messages
-- **Toast Notifications**: Success, error, and info notifications
+### 🎨 Optimized User Experience
+- **Responsive Design**: Works on mobile, tablet, and desktop
+- **Dark/Light Mode**: User preference toggle
+- **Modern UI**: Clean layout using Tailwind CSS
+- **UX Enhancements**: Loading indicators, skeletons, toasts, and more
 
-### 🔧 Technical Features
-- **TypeScript**: Full type safety and better development experience
-- **React Hooks**: Modern React patterns with custom hooks
-- **Context API**: Global state management for authentication and themes
-- **React Router**: Client-side routing with protected routes
-- **API Integration**: RESTful API integration with error handling
-- **Local Storage**: Persistent user preferences and session data
+### 🔧 Technical Highlights
+- **TypeScript + React 18**: Strong typing and modern React architecture
+- **Hooks & Context API**: Scalable global state management
+- **Vite-Powered**: Fast build and dev environment
+- **REST API Integration**: Secure communication with backend
+- **Local Storage**: Save user preferences and sessions
 
-## Tech Stack
+---
 
-- **Frontend Framework**: React 18 with TypeScript
-- **Styling**: Tailwind CSS
-- **Routing**: React Router DOM
-- **Icons**: Lucide React
-- **Real-time**: Socket.IO Client
-- **Date Handling**: date-fns
-- **Build Tool**: Vite
-- **Package Manager**: npm
+## 🛠️ Tech Stack
 
-## Getting Started
+| Feature         | Technology                 |
+|-----------------|----------------------------|
+| Framework       | React 18, TypeScript       |
+| Styling         | Tailwind CSS               |
+| Routing         | React Router DOM           |
+| Real-time       | Socket.IO Client           |
+| Date Handling   | date-fns                   |
+| Icons           | Lucide React               |
+| Build Tool      | Vite                       |
+| Package Manager | npm                        |
+
+---
+
+## 🚀 Getting Started
 
 ### Prerequisites
-
-- Node.js (v16 or higher)
+- Node.js v16+
 - npm or yarn
-- SmartTasker backend server running (see backend README)
+- SmartTasker backend running (see backend README)
 
 ### Installation
+git clone <repository-url>
+cd SmartTasker/Client
+npm install
+Environment Setup
+Create a .env file in the Client directory:
 
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd SmartTasker/Client
-   ```
+env
+Copy code
+VITE_API_BASE_URL=http://localhost:5000/api
+VITE_SOCKET_URL=http://localhost:5000
+Run the App
+bash
+Copy code
+npm run dev
+Open your browser at http://localhost:5173.
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Environment Setup**
-   Create a `.env` file in the Client directory:
-   ```env
-   VITE_API_BASE_URL=http://localhost:5000/api
-   VITE_SOCKET_URL=http://localhost:5000
-   ```
-
-4. **Start the development server**
-   ```bash
-   npm run dev
-   ```
-
-5. **Open your browser**
-   Navigate to `http://localhost:5173` (or the URL shown in the terminal)
-
-### Building for Production
-
-```bash
+Build for Production
+bash
+Copy code
 npm run build
-```
+Output will be in the dist/ directory.
 
-The built files will be in the `dist` directory.
-
-## Project Structure
-
-```
+📁 Project Structure
+csharp
+Copy code
 Client/
-├── public/                 # Static assets
+├── public/               # Static assets
 ├── src/
-│   ├── components/         # Reusable UI components
-│   │   ├── common/         # Common components (Header, Footer, Layout)
-│   │   ├── dashboard/      # Dashboard-specific components
-│   │   ├── home/          # Home page components
-│   │   └── notifications/ # Notification components
-│   ├── contexts/          # React contexts (Auth, Theme)
-│   ├── hooks/             # Custom React hooks
-│   ├── pages/             # Page components
-│   │   ├── auth/          # Authentication pages
-│   │   ├── dashboard/     # Dashboard page
-│   │   ├── home/          # Home page
-│   │   ├── notifications/ # Notifications page
-│   │   ├── profile/       # Profile page
-│   │   └── settings/      # Settings page
-│   ├── services/          # API and external services
-│   ├── types/             # TypeScript type definitions
-│   ├── utils/             # Utility functions
-│   ├── App.tsx            # Main App component
-│   ├── main.tsx           # Application entry point
-│   └── index.css          # Global styles
-├── package.json           # Dependencies and scripts
-├── tailwind.config.js     # Tailwind CSS configuration
-├── tsconfig.json          # TypeScript configuration
-└── vite.config.ts         # Vite configuration
-```
+│   ├── components/       # UI components
+│   │   ├── common/       # Header, Footer, Layout
+│   │   ├── dashboard/    # Dashboard-specific UI
+│   │   ├── home/         # Homepage UI
+│   │   └── notifications/# Notification components
+│   ├── contexts/         # Global state (Auth, Theme)
+│   ├── hooks/            # Custom React hooks
+│   ├── pages/            # App pages
+│   │   ├── auth/         # Auth pages
+│   │   ├── dashboard/    # Dashboard
+│   │   ├── home/         # Homepage
+│   │   ├── notifications/# Notifications
+│   │   ├── profile/      # Profile page
+│   │   └── settings/     # Settings
+│   ├── services/         # API services
+│   ├── types/            # TypeScript types
+│   ├── utils/            # Utility functions
+│   ├── App.tsx           # Root component
+│   ├── main.tsx          # Entry point
+│   └── index.css         # Global styles
+├── package.json          # Dependencies and scripts
+├── tailwind.config.js    # Tailwind setup
+├── tsconfig.json         # TypeScript config
+└── vite.config.ts        # Vite config
+🔗 API Integration
+Integrated via services/api.ts:
 
-## API Integration
+Authentication (JWT-based)
 
-The frontend integrates with the SmartTasker backend API through the `api.ts` service file. Key features:
+Task CRUD operations
 
-- **Authentication**: JWT token-based authentication
-- **Task Management**: Full CRUD operations for tasks
-- **User Management**: Profile updates and user search
-- **Real-time Updates**: Socket.IO integration for live updates
-- **Error Handling**: Comprehensive error handling and user feedback
+Profile and user management
 
-## Real-time Features
+Socket.IO real-time sync
 
-The application uses Socket.IO for real-time updates:
+Comprehensive error handling
 
-- **Task Updates**: Real-time task creation, updates, and deletion
-- **Task Sharing**: Instant notifications when tasks are shared
-- **Comments**: Live comment updates
-- **User Status**: Online/offline status tracking
-- **Notifications**: Real-time notification delivery
+🔄 Authentication Flow
+Login/Register via email/password or OAuth
 
-## Authentication Flow
+JWT token stored in localStorage
 
-1. **Login/Register**: Users can authenticate via email/password or OAuth
-2. **Token Storage**: JWT tokens are stored in localStorage
-3. **Auto-refresh**: Tokens are automatically refreshed before expiration
-4. **Route Protection**: Protected routes redirect to login if not authenticated
-5. **Socket Connection**: Socket.IO connects after successful authentication
+Token Refresh before expiration
 
-## Contributing
+Protected Routes redirect unauthenticated users
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+Socket.IO connects post-authentication
 
+🤝 Contributing
+Fork the repository
 
-## This project is a part of a hackathon run by https://www.katomaran.com
+Create a branch: git checkout -b feature/your-feature
+
+Commit your changes: git commit -m "Add your feature"
+
+Push to GitHub: git push origin feature/your-feature
+
+Open a Pull Request 🎉
+
+This project is a part of a hackathon run by https://www.katomaran.com 
