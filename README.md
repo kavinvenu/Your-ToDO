@@ -84,28 +84,51 @@ https://github.com/user-attachments/assets/38f2ac70-8f87-45b5-98e4-8e9496f00984
 - npm or yarn
 - SmartTasker backend running (see backend README)
 
-### Installation
+# 🚀 Installation Guide
+
+## 📥 Clone the Repository
+
+```bash
 git clone <repository-url>
 cd SmartTasker/Client
-npm install
-Environment Setup
-Create a .env file in the Client directory:
+```
 
-env
-Copy code
+## 📦 Install Dependencies
+
+```bash
+npm install
+```
+
+## ⚙️ Environment Setup
+
+Create a `.env` file in the `Client` directory with the following content:
+
+```env
 VITE_API_BASE_URL=http://localhost:5000/api
 VITE_SOCKET_URL=http://localhost:5000
-Run the App
-bash
-Copy code
-npm run dev
-Open your browser at http://localhost:5173.
+```
 
-Build for Production
-bash
-Copy code
+## 🧪 Start the Development Server
+
+```bash
+npm run dev
+```
+
+Then open your browser and navigate to:
+
+```
+http://localhost:5173
+```
+
+*(or the URL shown in your terminal)*
+
+---
+
+## 📦 Building for Production
+
+```bash
 npm run build
-Output will be in the dist/ directory.
+```
 
 # 📁 Project Structure
 
